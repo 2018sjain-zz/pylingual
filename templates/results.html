@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PyLingual</title>
+    <link rel="shortcut icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="data" action = "">
+        <h1>pylingual</h1>
+        <h1>input: {{ data['input'] }}</h1>
+        {% for language in data['data'] %}
+        	<h1>{{ language }}: {{ data['data'][language] }}</h1>
+        {% endfor %}
+        <a href="{{ url_for('index') }}"><button type="submit" id="button">Back</button></a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PyLingual</title>
+    <link rel="shortcut icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>pylingual</h1>
+        <div class="search">
+            <form action="." method="post">
+                <input type="text" class="searchTerm" placeholder="What text do you want to analyze?" name="input">
+                <button name="my-form" type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

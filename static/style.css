@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Sniglet);
+
+body{
+  background: #77dd77;
+  font-family: 'Sniglet', cursive;
+}
+
+h1{
+  color: #FFFFFF;
+}
+
+button{
+  border: 3px solid #FFFFFF;
+  background: #77dd77;
+  font-family: 'Sniglet', cursive;
+  font-size: 26px;
+  height: 48px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+input{
+  color: #77dd77;
+  font-size: 18px;
+  font-family: 'Sniglet', cursive;
+}
+
+#inner {
+  display: table;
+  margin: 0 auto;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #FFFFFF;
+  padding: 5px;
+  height: 28px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #03c03c;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 40px;
+  height: 44px;
+  border: 1px solid #FFFFFF;
+  background: #77dd77;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.data{
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
